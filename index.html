@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Time Paradox Game</title>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <div class="game-container">
+      <div class="board-container">
+        <div id="winner" class="winner" style="display: none"></div>
+        <div id="board"></div>
+      </div>
+
+      <div class="sidebar">
+        <h3>Players</h3>
+        <div id="players"></div>
+
+        <div class="tool-select">
+          <label>Tool:</label>
+          <select id="toolSelect">
+            <option value="">None</option>
+            <option value="trap">Trap</option>
+            <option value="gun">Gun</option>
+          </select>
+        </div>
+
+        <div class="controls">
+          <h4>Movement</h4>
+          <button class="btn" id="moveWest">← West</button>
+          <button class="btn" id="moveEast">East →</button>
+          <button class="btn" id="moveNorth">↑ North</button>
+          <button class="btn" id="moveSouth">↓ South</button>
+          <br />
+          <button class="btn" id="movePast">⏪ Past</button>
+          <button class="btn" id="moveFuture">Future ⏩</button>
+          <br />
+          <button class="btn" id="endTurnBtn">End Turn</button>
+        </div>
+
+        <div class="log" id="log"></div>
+      </div>
+    </div>
+
+    <script type="module" src="src/main.ts"></script>
+  </body>
+</html>

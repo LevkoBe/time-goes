@@ -1,0 +1,164 @@
+body {
+  margin: 0;
+  padding: 20px;
+  font-family: "Courier New", monospace;
+  background: #0a0a0a;
+  color: #00ff00;
+  min-height: 100vh;
+}
+
+.game-container {
+  display: flex;
+  gap: 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.board-container {
+  flex: 1;
+}
+
+.time-layer {
+  margin-bottom: 20px;
+  border: 2px solid #333;
+  border-radius: 8px;
+  padding: 10px;
+  background: #111;
+}
+
+.time-label {
+  text-align: center;
+  margin-bottom: 10px;
+  font-size: 14px;
+  color: #888;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 2px;
+  width: 250px;
+  margin: 0 auto;
+}
+
+.cell {
+  width: 48px;
+  height: 48px;
+  border: 1px solid #333;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  font-size: 12px;
+  position: relative;
+  background: #1a1a1a;
+}
+
+.cell:hover {
+  border-color: #555;
+}
+
+.cell.player-0 {
+  background: #ff4444;
+}
+.cell.player-1 {
+  background: #4444ff;
+}
+.cell.player-2 {
+  background: #ffff44;
+  color: #000;
+}
+.cell.player-3 {
+  background: #44ff44;
+  color: #000;
+}
+
+.cell.trap {
+  background: #ff8800;
+}
+.cell.gun {
+  background: #ff0088;
+}
+
+.sidebar {
+  width: 300px;
+  background: #111;
+  border: 2px solid #333;
+  border-radius: 8px;
+  padding: 15px;
+}
+
+.player-info {
+  margin-bottom: 15px;
+  padding: 10px;
+  border: 1px solid #333;
+  border-radius: 4px;
+}
+
+.player-info.current {
+  border-color: #00ff00;
+  background: #003300;
+}
+
+.player-info.dead {
+  opacity: 0.5;
+  background: #330000;
+}
+
+.controls {
+  margin-top: 20px;
+}
+
+.btn {
+  background: #222;
+  color: #00ff00;
+  border: 1px solid #333;
+  padding: 8px 12px;
+  margin: 2px;
+  cursor: pointer;
+  border-radius: 4px;
+  font-family: inherit;
+}
+
+.btn:hover {
+  background: #333;
+}
+
+.btn:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+.log {
+  height: 200px;
+  overflow-y: auto;
+  background: #000;
+  border: 1px solid #333;
+  padding: 10px;
+  margin-top: 15px;
+  font-size: 12px;
+}
+
+.winner {
+  text-align: center;
+  font-size: 24px;
+  color: #ffff00;
+  margin-bottom: 20px;
+}
+
+.coord {
+  font-size: 10px;
+  color: #666;
+}
+
+.tool-select {
+  margin: 10px 0;
+}
+
+.tool-select select {
+  background: #222;
+  color: #00ff00;
+  border: 1px solid #333;
+  padding: 4px;
+  font-family: inherit;
+}
