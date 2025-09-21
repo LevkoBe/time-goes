@@ -8,7 +8,7 @@ import {
   Movement,
 } from "./types.ts";
 import { Player } from "./player.ts";
-import { Coordinate } from "./Coordinate.ts";
+import { Coordinate } from "./coordinate.ts";
 
 export class GameState implements IGameState {
   config: GameConfig;

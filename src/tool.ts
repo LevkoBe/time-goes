@@ -4,7 +4,7 @@ import {
   Player,
   Coordinate as ICoordinate,
 } from "./types.ts";
-import { Coordinate } from "./Coordinate.ts";
+import { Coordinate } from "./coordinate.ts";
 
 export class Tool implements ITool {
   toolType: string;

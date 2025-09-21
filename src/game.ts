@@ -1,6 +1,6 @@
 import { GameConfig, Player as IPlayer } from "./types.ts";
 import { GameState } from "./gamestate.ts";
-import { Coordinate } from "./Coordinate.ts";
+import { Coordinate } from "./coordinate.ts";
 
 export class Game {
   config: GameConfig;

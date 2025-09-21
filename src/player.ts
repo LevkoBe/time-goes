@@ -1,5 +1,5 @@
 import { Player as IPlayer, Tool, Coordinate as ICoordinate } from "./types.ts";
-import { Coordinate } from "./Coordinate.ts";
+import { Coordinate } from "./coordinate.ts";
 import { Tool as GameTool } from "./tool.ts";
 
 export class Player implements IPlayer {
