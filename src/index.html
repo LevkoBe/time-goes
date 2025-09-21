@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Time Travel Strategy Game</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="game-container">
+      <div class="header">
+        <h1>⏰ Time Travel Strategy Game</h1>
+      </div>
+
+      <div class="game-info">
+        <div class="info-section">
+          <div class="info-label">Current Move</div>
+          <div class="info-value" id="current-move">1</div>
+        </div>
+        <div class="info-section">
+          <div class="info-label">Current Player</div>
+          <div class="info-value" id="current-player">Player 1</div>
+        </div>
+        <div class="info-section">
+          <div class="info-label">Players Alive</div>
+          <div class="info-value" id="players-alive">2</div>
+        </div>
+        <div class="info-section">
+          <div class="info-label">Current Time</div>
+          <div class="info-value" id="current-time">t = 0</div>
+        </div>
+      </div>
+
+      <div class="game-board-container" id="game-boards">
+        <!-- Time slices will be generated here -->
+      </div>
+
+      <div class="player-info">
+        <div class="players-list" id="players-list">
+          <!-- Player cards will be generated here -->
+        </div>
+      </div>
+
+      <div class="controls">
+        <button class="btn" onclick="game.resetGame()">🔄 New Game</button>
+        <button class="btn" onclick="game.showInstructions()">
+          ❓ Instructions
+        </button>
+      </div>
+
+      <div class="instructions">
+        <strong>How to Play:</strong><br />
+        • <strong>Left Click:</strong> Move to highlighted green cells
+        (space/time movement)<br />
+        • <strong>Right Click:</strong> Place trap on highlighted orange cells
+        (uses your trap tool)<br />
+        • You can move one step in any direction: up/down/left/right in space,
+        or forward/backward in time<br />
+        • <strong>Traps:</strong> Invisible traps trigger when enemies step on
+        them (red dots show your own traps)<br />
+        • Goal: Be the last player standing<br />
+        • ⚠️ Changing the past may create paradoxes - use time travel wisely!
+      </div>
+    </div>
+
+    <script type="module" src="main.ts"></script>
+  </body>
+</html>
