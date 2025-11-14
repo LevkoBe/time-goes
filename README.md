@@ -4,6 +4,18 @@ A prototype turn-based strategy game where players navigate through both space a
 
 **[👉 Play Live Demo](https://levkobe.github.io/time-goes/)**
 
+**Navigation**
+- [What is this?](#what-is-this)
+- [Core Concept](#core-concept)
+  - [The Spacetime Grid](#the-spacetime-grid)
+  - [Movement System](#movement-system)
+  - [Trap Mechanics](#trap-mechanics)
+- [How to Play](#how-to-play)
+- [Implementation Notes](#implementation-notes)
+- [Tech Stack](#tech-stack)
+- [Local Development](#local-development)
+- [Project Structure](#project-structure)
+
 ## What is this?
 
 This is an early playable sketch exploring time travel mechanics in a grid-based strategy game. Players move through a 3D spacetime grid (2D space + 1D time), can place traps in the past that persist into the future, and must outmaneuver opponents across multiple time slices.
